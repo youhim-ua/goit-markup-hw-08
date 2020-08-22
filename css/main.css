@@ -1,0 +1,34 @@
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --hero-title-color: #ffffff;
+  --hover-color: #2196f3;
+  --focus-color: #2196f3;
+  --back-color: #ffffff;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+}
+
+.logo {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  color: #2196f3;
+  letter-spacing: 0.03em;
+}
+
+.logoblack {
+  color: var(--title-text-color);
+  white-space: normal;
+}
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}

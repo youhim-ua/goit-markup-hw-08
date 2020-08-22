@@ -9,10 +9,11 @@
 
 body {
   font-family: Roboto, sans-serif;
+  background-color: #ffffff;
 }
 
 .logo {
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 26px;
@@ -21,14 +22,261 @@ body {
   letter-spacing: 0.03em;
 }
 
+.logo:hover,
+.logo:focus {
+  color: #212121;
+}
+
+.logoblack:hover,
+.logoblack:focus {
+  color: #2196f3;
+}
+
 .logoblack {
   color: var(--title-text-color);
   white-space: normal;
 }
+
+.logo-footer {
+  font-family: Raleway, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: #2196f3;
+  white-space: normal;
+}
+
+.logowhite {
+  font-family: Raleway, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: #fff;
+  white-space: normal;
+}
+
+.logo-footer:hover,
+.logo-footer:focus {
+  color: #fff;
+}
+
+.logowhite:hover,
+.logowhite:focus {
+  color: #2196f3;
+}
+
 a {
   text-decoration: none;
 }
 
 li {
   list-style-type: none;
+}
+
+.navigation-links {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--title-text-color);
+}
+
+.navigation-links:hover,
+.navigation-links:focus {
+  color: var(--hover-color);
+}
+
+.contacts-links {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+}
+
+.contacts-links:hover,
+.contacts-links:focus {
+  color: var(--hover-color);
+}
+
+/* hero */
+.hero {
+  background-color: #2f303a;
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--hero-title-color);
+}
+
+.hero-link {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--hero-title-color);
+}
+
+.hero-link:hover,
+.hero-link:focus {
+  color: var(--hover-color);
+}
+
+.feature-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+
+.features-list-item {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-text-color);
+}
+
+.features-text {
+  font-weight: normal;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  font-size: 14px;
+  color: var(--primary-text-color);
+}
+
+.what-we-do-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+
+.team-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+
+.team-person {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+
+.team-person-position {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+
+.location {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+.footer-block {
+  background-color: #2f303a;
+}
+
+/* portfolio chapter*/
+.bodyclass {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+}
+
+/* кнопки */
+.masterpiacies-buttons button {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  border: none;
+  color: #212121;
+  background: #f5f4fa;
+}
+
+.button-all:hover,
+.button-all:focus {
+  border: none;
+  color: #f5f4fa;
+  background: #2196f3;
+}
+
+.button-web:hover,
+.button-web:focus {
+  border: none;
+  color: #f5f4fa;
+  background: #2196f3;
+}
+
+.button-app:hover,
+.button-app:focus {
+  border: none;
+  color: #f5f4fa;
+  background: #2196f3;
+}
+
+.button-design:hover,
+.button-design:focus {
+  border: none;
+  color: #f5f4fa;
+  background: #2196f3;
+}
+
+.button-mark:hover,
+.button-mark:focus {
+  border: none;
+  color: #f5f4fa;
+  background: #2196f3;
+}
+
+.masterpiacies-list-item {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  text-align: left;
+  color: var(--title-text-color);
+}
+.masterpiacies-text {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: var(--primary-text-color);
 }

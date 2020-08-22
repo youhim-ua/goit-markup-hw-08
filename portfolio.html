@@ -4,38 +4,59 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Лучшая вебстудия для бизнеса</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+    />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/main.css" />
   </head>
 
-  <body>
+  <body class="bodyclass">
     <header>
       <nav>
         <ul>
-          <li><a href="./">WebStudio</a></li>
-          <li><a href="./index.html">Студия</a></li>
-          <li><a href="#">Портфолио</a></li>
-          <li><a href="#">Контакты</a></li>
+          <li>
+            <a href="./"
+              ><span class="logo">Web</span
+              ><span class="logo logoblack">Studio</span></a
+            >
+          </li>
+          <li><a class="navigation-links" href="#">Студия</a></li>
+          <li>
+            <a class="navigation-links" href="./portfolio.html">Портфолио</a>
+          </li>
+          <li><a class="navigation-links" href="#">Контакты</a></li>
         </ul>
       </nav>
 
       <ul>
-        <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+        <li>
+          <a class="contacts-links" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+        <li>
+          <a class="contacts-links" href="tel:+380961111111"
+            >+38 096 111 11 11</a
+          >
+        </li>
       </ul>
     </header>
 
     <main>
-      <section>
-        <h1>Примеры работ</h1>
+      <section class="masterpiacies">
+        <h1 class="masterpiacies-title">Примеры работ</h1>
 
-        <ul>
-          <li><button type="button">Все</button></li>
-          <li><button type="button">Веб-сайты</button></li>
-          <li><button type="button">Приложения</button></li>
-          <li><button type="button">Дизайн</button></li>
-          <li><button type="button">Маркетинг</button></li>
+        <ul class="masterpiacies-buttons">
+          <li><button class="button-all" type="button">Все</button></li>
+          <li><button class="button-web" type="button">Веб-сайты</button></li>
+          <li><button class="button-app" type="button">Приложения</button></li>
+          <li><button class="button-design" type="button">Дизайн</button></li>
+          <li><button class="button-mark" type="button">Маркетинг</button></li>
         </ul>
 
-        <ul>
+        <ul class="masterpiacies-list">
           <li>
             <img
               src="./images/technopig.jpg"
@@ -43,8 +64,8 @@
               width="370"
               height="294"
             />
-            <h3>Технокряк</h3>
-            <p>Веб-сайт</p>
+            <h3 class="masterpiacies-list-item">Технокряк</h3>
+            <p class="masterpiacies-text">Веб-сайт</p>
           </li>
           <li>
             <img
@@ -53,8 +74,10 @@
               width="370"
               height="294"
             />
-            <h3>Постер <span lang="en">New Orlean vs Golden Star</span></h3>
-            <p lang="en">Дизайн</p>
+            <h3 class="masterpiacies-list-item">
+              Постер <span lang="en">New Orlean vs Golden Star</span>
+            </h3>
+            <p class="masterpiacies-text" lang="en">Дизайн</p>
           </li>
           <li>
             <img
@@ -63,8 +86,10 @@
               width="370"
               height="294"
             />
-            <h3>Ресторан <span lang="en">Seafood</span></h3>
-            <p>Приложение</p>
+            <h3 class="masterpiacies-list-item">
+              Ресторан <span lang="en">Seafood</span>
+            </h3>
+            <p class="masterpiacies-text">Приложение</p>
           </li>
           <li>
             <img
@@ -73,8 +98,10 @@
               width="370"
               height="294"
             />
-            <h3>Проект <span lang="en">Prime</span></h3>
-            <p>Маркетинг</p>
+            <h3 class="masterpiacies-list-item">
+              Проект <span lang="en">Prime</span>
+            </h3>
+            <p class="masterpiacies-text">Маркетинг</p>
           </li>
           <li>
             <img
@@ -83,8 +110,10 @@
               width="370"
               height="294"
             />
-            <h3>Проект <span lang="en">Boxes</span></h3>
-            <p lang="en">Приложение</p>
+            <h3 class="masterpiacies-list-item">
+              Проект <span lang="en">Boxes</span>
+            </h3>
+            <p class="masterpiacies-text" lang="en">Приложение</p>
           </li>
           <li>
             <img
@@ -93,8 +122,10 @@
               width="370"
               height="294"
             />
-            <h3 lang="en">Inspiration has no Borders</h3>
-            <p>Веб-сайт</p>
+            <h3 class="masterpiacies-list-item" lang="en">
+              Inspiration has no Borders
+            </h3>
+            <p class="masterpiacies-text">Веб-сайт</p>
           </li>
           <li>
             <img
@@ -103,8 +134,10 @@
               width="370"
               height="294"
             />
-            <h3>Издание <span lang="en">Limited Edition</span></h3>
-            <p>Дизайн</p>
+            <h3 class="masterpiacies-list-item">
+              Издание <span lang="en">Limited Edition</span>
+            </h3>
+            <p class="masterpiacies-text">Дизайн</p>
           </li>
           <li>
             <img
@@ -113,8 +146,10 @@
               width="370"
               height="294"
             />
-            <h3>Проект <span lang="en">LAB</span></h3>
-            <p>Маркетинг</p>
+            <h3 class="masterpiacies-list-item">
+              Проект <span lang="en">LAB</span>
+            </h3>
+            <p class="masterpiacies-text">Маркетинг</p>
           </li>
           <li>
             <img
@@ -123,20 +158,25 @@
               width="370"
               height="294"
             />
-            <h3 lang="en">Growing Business</h3>
-            <p>Приложение</p>
+            <h3 class="masterpiacies-list-item" lang="en">Growing Business</h3>
+            <p class="masterpiacies-text">Приложение</p>
           </li>
         </ul>
       </section>
     </main>
 
-    <footer>
-      <a href="./">WebStudio</a>
+    <footer class="footer-block">
+      <a href="./"
+        ><span class="logo-footer">Web</span
+        ><span class="logowhite">Studio</span></a
+      >
 
       <address>
-        г. Киев, пр-т Леси Украинки, 26<br />
-        <a href="mailto:info@devstudio.com">info@devstudio.com</a><br />
-        <a href="tel:+380961111111">+38 096 111 11 11</a>
+        <span class="location">г. Киев, пр-т Леси Украинки, 26</span><br />
+        <a class="contacts-links" href="mailto:info@devstudio.com"
+          >info@devstudio.com</a
+        ><br />
+        <a class="contacts-links" href="tel:+380961111111">+38 096 111 11 11</a>
       </address>
     </footer>
   </body>

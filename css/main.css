@@ -1,113 +1,83 @@
 :root {
   --primary-text-color: #757575;
   --title-text-color: #212121;
-  --hero-title-color: #ffffff;
-  --hover-color: #2196f3;
-  --focus-color: #2196f3;
-  --back-color: #ffffff;
+  --back-color-and-hero: #ffffff;
+  --button-color: #f5f4fa;
+  --background-hero-color: #2f303a;
+  --hover-focus-color: #2196f3;
 }
 
 body {
   font-family: Roboto, sans-serif;
-  background-color: #ffffff;
+  background-color: var(--back-color-and-hero);
 }
+
+/* стили логотипа */
 
 .logo {
   font-family: Raleway, sans-serif;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  color: #2196f3;
+  color: var(--hover-focus-color);
   letter-spacing: 0.03em;
 }
 
-.logo:hover,
-.logo:focus {
-  color: #212121;
+.link-logo {
+  text-decoration: none;
 }
 
-.logoblack:hover,
-.logoblack:focus {
-  color: #2196f3;
-}
-
-.logoblack {
+.black {
   color: var(--title-text-color);
   white-space: normal;
 }
 
-.logo-footer {
-  font-family: Raleway, sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: #2196f3;
+.white {
+  color: var(--back-color-and-hero);
   white-space: normal;
 }
 
-.logowhite {
-  font-family: Raleway, sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: #fff;
-  white-space: normal;
-}
-
-.logo-footer:hover,
-.logo-footer:focus {
-  color: #fff;
-}
-
-.logowhite:hover,
-.logowhite:focus {
-  color: #2196f3;
-}
-
-a {
+.navigation-links,
+.contacts-links {
   text-decoration: none;
-}
-
-li {
-  list-style-type: none;
-}
-
-.navigation-links {
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+}
+
+.list,
+.masterpiacies-buttons {
+  list-style-type: none;
+}
+
+.masterpiacies-link {
+  text-decoration: none;
+}
+
+.navigation-links {
   color: var(--title-text-color);
 }
 
 .navigation-links:hover,
 .navigation-links:focus {
-  color: var(--hover-color);
+  color: var(--hover-focus-color);
 }
 
 .contacts-links {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
   color: var(--primary-text-color);
 }
 
 .contacts-links:hover,
 .contacts-links:focus {
-  color: var(--hover-color);
+  color: var(--hover-focus-color);
 }
 
 /* hero */
 .hero {
-  background-color: #2f303a;
+  background-color: var(--background-hero-color);
 }
 
 .hero-title {
@@ -117,27 +87,30 @@ li {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--hero-title-color);
+  color: var(--back-color-and-hero);
 }
 
 .hero-link {
-  font-weight: bold;
+  text-decoration: none;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  color: var(--hero-title-color);
+  color: var(--back-color-and-hero);
 }
 
 .hero-link:hover,
 .hero-link:focus {
-  color: var(--hover-color);
+  color: var(--hover-focus-color);
 }
 
-.feature-title {
-  font-weight: bold;
+.features-title,
+.what-we-do-title,
+.team-title {
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
@@ -146,7 +119,7 @@ li {
 }
 
 .features-list-item {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -155,29 +128,15 @@ li {
 }
 
 .features-text {
-  font-weight: normal;
+  font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.03em;
   font-size: 14px;
   color: var(--primary-text-color);
 }
 
-.what-we-do-title {
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--title-text-color);
-}
-
-.team-title {
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--title-text-color);
+.team {
+  background-color: var(--button-color);
 }
 
 .team-person {
@@ -190,7 +149,7 @@ li {
 }
 
 .team-person-position {
-  font-weight: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
@@ -200,22 +159,17 @@ li {
 
 .location {
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--back-color-and-hero);
 }
 .footer-block {
-  background-color: #2f303a;
+  background-color: var(--background-hero-color);
 }
 
 /* portfolio chapter*/
-.bodyclass {
-  font-family: Roboto, sans-serif;
-  font-style: normal;
-}
-
 /* кнопки */
 .masterpiacies-buttons button {
   font-style: normal;
@@ -225,47 +179,27 @@ li {
   text-align: center;
   letter-spacing: 0.03em;
   border: none;
-  color: #212121;
-  background: #f5f4fa;
+  color: var(--title-text-color);
+  background: var(--button-color);
 }
 
 .button-all:hover,
-.button-all:focus {
-  border: none;
-  color: #f5f4fa;
-  background: #2196f3;
-}
-
+.button-all:focus,
 .button-web:hover,
-.button-web:focus {
-  border: none;
-  color: #f5f4fa;
-  background: #2196f3;
-}
-
+.button-web:focus,
 .button-app:hover,
-.button-app:focus {
-  border: none;
-  color: #f5f4fa;
-  background: #2196f3;
-}
-
+.button-app:focus,
 .button-design:hover,
-.button-design:focus {
-  border: none;
-  color: #f5f4fa;
-  background: #2196f3;
-}
-
+.button-design:focus,
 .button-mark:hover,
 .button-mark:focus {
   border: none;
-  color: #f5f4fa;
-  background: #2196f3;
+  color: var(--back-color-and-hero);
+  background: var(--hover-focus-color);
 }
 
 .masterpiacies-list-item {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
@@ -273,7 +207,7 @@ li {
   color: var(--title-text-color);
 }
 .masterpiacies-text {
-  font-weight: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;

@@ -62,17 +62,16 @@ body {
 }
 
 .navigation-links:hover,
-.navigation-links:focus {
+.navigation-links:focus,
+.contacts-links:hover,
+.contacts-links:focus,
+.hero-link:hover,
+.hero-link:focus {
   color: var(--hover-focus-color);
 }
 
 .contacts-links {
   color: var(--primary-text-color);
-}
-
-.contacts-links:hover,
-.contacts-links:focus {
-  color: var(--hover-focus-color);
 }
 
 /* hero */
@@ -102,11 +101,6 @@ body {
   color: var(--back-color-and-hero);
 }
 
-.hero-link:hover,
-.hero-link:focus {
-  color: var(--hover-focus-color);
-}
-
 .features-title,
 .what-we-do-title,
 .team-title {
@@ -116,6 +110,11 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
+}
+
+.features-title,
+.masterpiacies-title {
+  display: none;
 }
 
 .features-list-item {
@@ -183,16 +182,8 @@ body {
   background: var(--button-color);
 }
 
-.button-all:hover,
-.button-all:focus,
-.button-web:hover,
-.button-web:focus,
-.button-app:hover,
-.button-app:focus,
-.button-design:hover,
-.button-design:focus,
-.button-mark:hover,
-.button-mark:focus {
+.button-mp:hover,
+.button-mp:focus {
   border: none;
   color: var(--back-color-and-hero);
   background: var(--hover-focus-color);

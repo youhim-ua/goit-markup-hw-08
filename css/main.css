@@ -117,9 +117,7 @@ body {
 .navigation-links:hover,
 .navigation-links:focus,
 .contacts-links:hover,
-.contacts-links:focus,
-.hero-link:hover,
-.hero-link:focus {
+.contacts-links:focus {
   color: var(--hover-focus-color);
 }
 
@@ -133,6 +131,8 @@ body {
 }
 
 .hero-title {
+  margin-top: 0;
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -142,16 +142,39 @@ body {
   color: var(--back-color-and-hero);
 }
 
+.hero-content {
+  width: 696px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 200px;
+  padding-bottom: 0;
+}
+
 .hero-link {
+  text-decoration: none;
+  display: flex;
+  padding-bottom: 200px;
+}
+
+.button-hero {
+  margin-left: auto;
+  margin-right: auto;
   text-decoration: none;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--back-color-and-hero);
+  width: 200px;
+  height: 50px;
+  left: 700px;
+  top: 430px;
+  background: var(--hover-focus-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
 }
 
 .features-title,

@@ -7,6 +7,16 @@
   --hover-focus-color: #2196f3;
 }
 
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
 body {
   font-family: Roboto, sans-serif;
   background-color: var(--back-color-and-hero);

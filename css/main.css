@@ -17,12 +17,33 @@ html {
   box-sizing: inherit;
 }
 
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flexbox {
+  display: flex;
+}
+
 body {
   font-family: Roboto, sans-serif;
   background-color: var(--back-color-and-hero);
 }
 
 /* стили логотипа */
+
+.page-header .flexbox {
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.navigation {
+  margin-right: 331px;
+}
 
 .logo {
   font-family: Raleway, sans-serif;
@@ -34,7 +55,13 @@ body {
   letter-spacing: 0.03em;
 }
 
+.nav-list-item-logo {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
 .link-logo {
+  margin-right: 93px;
   text-decoration: none;
 }
 
@@ -46,6 +73,20 @@ body {
 .white {
   color: var(--back-color-and-hero);
   white-space: normal;
+}
+
+.navigation-list {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list-item {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.nav-list-item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .navigation-links,
@@ -60,6 +101,8 @@ body {
 
 .list,
 .masterpiacies-buttons {
+  margin: 0;
+  padding: 0;
   list-style-type: none;
 }
 

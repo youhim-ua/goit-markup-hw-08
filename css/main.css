@@ -200,7 +200,8 @@ body {
 
 .features-list,
 .what-we-do-list,
-.team-list {
+.team-list,
+.project-list {
   display: flex;
   flex-wrap: wrap;
 }
@@ -289,7 +290,21 @@ body {
   color: var(--primary-text-color);
 }
 
+.footer-location {
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.address {
+  align-items: flex-start;
+  flex-direction: column;
+}
+
 .location {
+  margin-top: 0;
+  margin-bottom: 9px;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -297,37 +312,24 @@ body {
   letter-spacing: 0.03em;
   color: var(--back-color-and-hero);
 }
+
 .footer-block {
   background-color: var(--background-hero-color);
 }
 
-.down-logo,
-.address {
-  display: flex;
-}
-
-.down-logo-one,
-.down-logo-two {
-  padding-top: 60px;
+.down-logo {
   margin-bottom: 20px;
+  margin-right: 0;
 }
 
-.address {
-  flex-direction: column;
-}
-
-.location,
 .footer-links:not(:last-child) {
   margin-bottom: 9px;
-}
-
-.footer-links:last-child {
-  padding-bottom: 60px;
 }
 
 /* portfolio chapter*/
 /* кнопки */
 .masterpiacies-buttons button {
+  padding: 6px 22px;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -339,14 +341,49 @@ body {
   background: var(--button-color);
 }
 
+.masterpiacies-buttons {
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 94px;
+}
+
+.buttons-item:not(:last-child) {
+  margin-right: 8px;
+}
+
 .button-mp:hover,
 .button-mp:focus {
   border: none;
   color: var(--back-color-and-hero);
   background: var(--hover-focus-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+
+.project-list {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 50px;
+  margin-bottom: 94px;
+}
+
+.project-list-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.project-list-item:nth-child(n + 6) {
+  margin-bottom: 0;
+}
+
+.project-list-item {
+  margin-bottom: 30px;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
 }
 
 .masterpiacies-list-item {
+  margin: 20px 24px 4px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -355,6 +392,7 @@ body {
   color: var(--title-text-color);
 }
 .masterpiacies-text {
+  margin: 0 24px 20px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.87;

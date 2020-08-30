@@ -308,7 +308,7 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.71;
+  line-height: 1;
   letter-spacing: 0.03em;
   color: var(--back-color-and-hero);
 }
@@ -372,13 +372,13 @@ body {
   margin-right: 0;
 }
 
-.project-list-item:nth-child(n + 6) {
+.project-list-item:nth-child(n + 7) {
   margin-bottom: 0;
 }
 
 .project-list-item {
   margin-bottom: 30px;
-  background: #ffffff;
+  background: var(--back-color-and-hero);
   border: 1px solid #eeeeee;
 }
 

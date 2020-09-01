@@ -36,13 +36,12 @@ body {
 
 /* стили логотипа */
 
-.page-header .flexbox {
-  justify-content: flex-end;
-  align-items: center;
-}
-
 .navigation {
-  margin-right: 331px;
+  display: flex;
+  justify-content: start;
+  margin-right: auto;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .logo {
@@ -55,12 +54,8 @@ body {
   letter-spacing: 0.03em;
 }
 
-.nav-list-item-logo {
-  padding-top: 24px;
-  padding-bottom: 25px;
-}
-
 .link-logo {
+  display: inline-block;
   margin-right: 93px;
   text-decoration: none;
 }
@@ -80,17 +75,15 @@ body {
   align-items: center;
 }
 
-.nav-list-item {
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
-
 .nav-list-item:not(:last-child) {
   margin-right: 50px;
 }
 
 .navigation-links,
 .contacts-links {
+  display: block;
+  padding-top: 7px;
+  padding-bottom: 7px;
   text-decoration: none;
   font-style: normal;
   font-weight: 500;
@@ -152,20 +145,17 @@ body {
 }
 
 .hero-link {
+  display: block;
+  width: 200px;
+  padding: 10px;
+  margin: 0 auto;
+  text-align: center;
   text-decoration: none;
-  justify-content: center;
-  align-items: center;
-  margin-left: auto;
-  margin-right: auto;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
   color: var(--back-color-and-hero);
-  width: 200px;
-  height: 50px;
-  left: 700px;
-  top: 430px;
   background: var(--hover-focus-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -182,9 +172,15 @@ body {
   color: var(--title-text-color);
 }
 
-.features-title,
-.masterpiacies-title {
-  display: none;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .zero {
@@ -194,8 +190,7 @@ body {
 }
 
 .features {
-  margin-top: 94px;
-  margin-bottom: 94px;
+  padding-bottom: 94px;
 }
 
 .features-list,
@@ -218,7 +213,7 @@ body {
 }
 
 .features-list-item {
-  padding-bottom: 10px;
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -236,7 +231,7 @@ body {
 }
 
 .what-we-do {
-  margin-bottom: 94px;
+  padding-bottom: 94px;
 }
 
 .what-we-do-title {
@@ -245,7 +240,6 @@ body {
 
 .team-title {
   margin-bottom: 50px;
-  padding-top: 94px;
 }
 
 .what-we-do-list-item {
@@ -256,6 +250,7 @@ body {
 
 .team {
   padding-bottom: 94px;
+  padding-top: 94px;
   background-color: var(--button-color);
 }
 
@@ -266,10 +261,7 @@ body {
 }
 
 .team-person {
-  margin-top: 30px;
   margin-bottom: 10px;
-  margin-right: auto;
-  margin-left: auto;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -279,15 +271,16 @@ body {
 }
 
 .team-person-position {
-  margin-bottom: 30px;
-  margin-right: auto;
-  margin-left: auto;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+}
+
+.team-text-box {
+  padding: 30px 0;
 }
 
 .footer-location {
@@ -308,7 +301,7 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1;
+  line-height: 1.7;
   letter-spacing: 0.03em;
   color: var(--back-color-and-hero);
 }
@@ -328,6 +321,10 @@ body {
 
 /* portfolio chapter*/
 /* кнопки */
+.masterpiacies {
+  padding: 94px 0;
+}
+
 .masterpiacies-buttons button {
   padding: 6px 22px;
   font-style: normal;
@@ -344,7 +341,6 @@ body {
 .masterpiacies-buttons {
   justify-content: center;
   flex-wrap: wrap;
-  margin-top: 94px;
 }
 
 .buttons-item:not(:last-child) {
@@ -363,9 +359,7 @@ body {
 
 .project-list {
   flex-wrap: wrap;
-  justify-content: space-between;
-  padding-top: 50px;
-  margin-bottom: 94px;
+  margin-top: 50px;
 }
 
 .project-list-item:nth-child(3n) {
@@ -378,12 +372,14 @@ body {
 
 .project-list-item {
   margin-bottom: 30px;
+  margin-right: 30px;
+  width: calc((100% - 2 * 30px) / 3);
   background: var(--back-color-and-hero);
   border: 1px solid #eeeeee;
 }
 
 .masterpiacies-list-item {
-  margin: 20px 24px 4px;
+  margin: 0 0 4px 0;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -392,11 +388,15 @@ body {
   color: var(--title-text-color);
 }
 .masterpiacies-text {
-  margin: 0 24px 20px;
+  margin: 0;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
   text-align: left;
   color: var(--primary-text-color);
+}
+
+.mp-text-box {
+  padding: 20px 24px;
 }

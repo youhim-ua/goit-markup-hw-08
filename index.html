@@ -16,13 +16,11 @@
     <header class="page-header">
       <div class="container flexbox">
         <nav class="navigation">
+          <a class="link-logo" href="./"
+            ><span class="logo">Web</span
+            ><span class="logo black">Studio</span></a
+          >
           <ul class="list navigation-list">
-            <li class="nav-list-item-logo">
-              <a class="link-logo" href="./"
-                ><span class="logo">Web</span
-                ><span class="logo black">Studio</span></a
-              >
-            </li>
             <li class="nav-list-item">
               <a class="navigation-links" href="./">Студия</a>
             </li>
@@ -55,14 +53,14 @@
       <section class="hero">
         <div class="hero-content">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-          <a class="hero-link flexbox" href="#">Заказать услугу</a>
+          <a class="hero-link" href="#">Заказать услугу</a>
         </div>
       </section>
 
       <section class="features">
         <div class="container flexbox">
           <!-- этот заголовок не отображается -->
-          <h2 class="features-title">Особенности</h2>
+          <h2 class="visually-hidden">Особенности</h2>
 
           <ul class="list features-list">
             <li class="features-list-point">
@@ -142,10 +140,12 @@
                 width="270"
                 height="260"
               />
-              <h3 class="team-person zero">Игорь Демьяненко</h3>
-              <p class="team-person-position zero" lang="en">
-                Product Designer
-              </p>
+              <div class="team-text-box">
+                <h3 class="team-person zero">Игорь Демьяненко</h3>
+                <p class="team-person-position zero" lang="en">
+                  Product Designer
+                </p>
+              </div>
             </li>
             <li class="team-list-item">
               <img
@@ -154,10 +154,12 @@
                 width="270"
                 height="260"
               />
-              <h3 class="team-person zero">Ольга Репина</h3>
-              <p class="team-person-position zero" lang="en">
-                Frontend Developer
-              </p>
+              <div class="team-text-box">
+                <h3 class="team-person zero">Ольга Репина</h3>
+                <p class="team-person-position zero" lang="en">
+                  Frontend Developer
+                </p>
+              </div>
             </li>
             <li class="team-list-item">
               <img
@@ -166,8 +168,10 @@
                 width="270"
                 height="260"
               />
-              <h3 class="team-person zero">Николай Тарасов</h3>
-              <p class="team-person-position zero" lang="en">Marketing</p>
+              <div class="team-text-box">
+                <h3 class="team-person zero">Николай Тарасов</h3>
+                <p class="team-person-position zero" lang="en">Marketing</p>
+              </div>
             </li>
             <li class="team-list-item">
               <img
@@ -176,8 +180,10 @@
                 width="270"
                 height="260"
               />
-              <h3 class="team-person zero">Михаил Ермаков</h3>
-              <p class="team-person-position zero" lang="en">UI Designer</p>
+              <div class="team-text-box">
+                <h3 class="team-person zero">Михаил Ермаков</h3>
+                <p class="team-person-position zero" lang="en">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>

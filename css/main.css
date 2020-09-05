@@ -240,6 +240,7 @@ body {
   background-position: center;
   height: 120px;
   background-color: var(--button-color);
+  border-radius: 4px;
 }
 
 .antena-icon::before {

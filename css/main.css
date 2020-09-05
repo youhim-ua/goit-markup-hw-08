@@ -36,12 +36,15 @@ body {
 
 /* стили логотипа */
 
+.page-header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
 .navigation {
   display: flex;
   justify-content: start;
   margin-right: auto;
-  padding-top: 24px;
-  padding-bottom: 25px;
 }
 
 .logo {
@@ -75,8 +78,31 @@ body {
   align-items: center;
 }
 
+.nav-list-item {
+  display: flex;
+  align-items: center;
+}
+
 .nav-list-item:not(:last-child) {
   margin-right: 50px;
+}
+
+.letter-icon::before {
+  content: "";
+  display: inline-flex;
+  margin-right: 10px;
+  width: 16px;
+  height: 12px;
+  background-image: url(../images/envelope.svg);
+}
+
+.phone-icon::before {
+  content: "";
+  display: inline-block;
+  margin-right: 10px;
+  width: 10px;
+  height: 16px;
+  background-image: url(../images/smartphone.svg);
 }
 
 .navigation-links,
@@ -119,9 +145,9 @@ body {
 }
 
 /* hero */
+
 .hero {
   background-color: var(--background-hero-color);
-  margin-bottom: 94px;
 }
 
 .hero-title {
@@ -190,6 +216,7 @@ body {
 }
 
 .features {
+  padding-top: 94px;
   padding-bottom: 94px;
 }
 
@@ -199,6 +226,32 @@ body {
 .project-list {
   display: flex;
   flex-wrap: wrap;
+}
+
+.features-list-point::before {
+  display: block;
+  content: "";
+  background-size: 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 120px;
+  background-color: var(--button-color);
+}
+
+.antena-icon::before {
+  background-image: url(../images/antenna.svg);
+}
+
+.clock-icon::before {
+  background-image: url(../images/clock.svg);
+}
+
+.computer-icon::before {
+  background-image: url(../images/diagram.svg);
+}
+
+.astronaut-icon::before {
+  background-image: url(../images/astronaut.svg);
 }
 
 .features-list-point,
@@ -213,6 +266,7 @@ body {
 }
 
 .features-list-item {
+  padding-top: 30px;
   margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;

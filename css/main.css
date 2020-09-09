@@ -383,7 +383,7 @@ body {
 }
 
 .social-icon {
-  fill: var(--primary-text-color);
+  fill: #AFB1B8;
   width: 20px;
   height: 20px;
 }
@@ -427,7 +427,7 @@ body {
 
 .partner-icon {
   margin: 0 auto;
-  fill: var(--primary-text-color);
+  fill: #AFB1B8;
 }
 
 .partners-link {

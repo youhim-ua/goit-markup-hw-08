@@ -22,7 +22,7 @@
           >
           <ul class="list navigation-list">
             <li class="nav-list-item">
-              <a class="navigation-links" href="./">Студия</a>
+              <a class="navigation-links studio-activ-line" href="./">Студия</a>
             </li>
             <li class="nav-list-item">
               <a class="navigation-links" href="./portfolio.html">Портфолио</a>
@@ -37,13 +37,17 @@
           <li class="nav-list-item">
             <a class="contacts-links fh-icons" href="mailto:info@devstudio.com">
               <svg class="envelop-icon" width="16" height="12">
-                <use href="./images/sprite.svg#envelope"></use></svg><span>info@devstudio.com</span>
+                <use href="./images/sprite.svg#envelope"></use>
+              </svg>
+              <span>info@devstudio.com</span>
             </a>
           </li>
           <li class="nav-list-item phone-icon">
             <a class="contacts-links fh-icons" href="tel:+380961111111">
               <svg class="smartphone-icon" width="10" height="16">
-                <use href="./images/sprite.svg#smartphone"></use></svg><span>+38 096 111 11 11</span>
+                <use href="./images/sprite.svg#smartphone"></use>
+              </svg>
+              <span>+38 096 111 11 11</span>
             </a>
           </li>
         </ul>
@@ -55,7 +59,7 @@
       <section class="hero">
         <div class="hero-content">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-          <a class="hero-link" href="#">Заказать услугу</a>
+          <a class="hero-link" href="#" data-modal-open>Заказать услугу</a>
         </div>
       </section>
 
@@ -103,28 +107,34 @@
 
           <ul class="list what-we-do-list">
             <li class="what-we-do-list-item">
-              <img
-                src="./images/box1.jpg"
-                alt="Моделирование сайтов с использование передовых методологий и техник."
-                width="370"
-                height="294"
-              />
+              <div class="deco-wwdl-item">
+                <img
+                  src="./images/box1.jpg"
+                  alt="Моделирование сайтов с использование передовых методологий и техник."
+                  width="370"
+                />
+                <p class="what-we-do-item-text">Десктопные приложения</p>
+              </div>
             </li>
             <li class="what-we-do-list-item">
-              <img
-                src="./images/box2.jpg"
-                alt="Адаптивная вёрстка для Вашего проекта."
-                width="370"
-                height="294"
-              />
+              <div class="deco-wwdl-item">
+                <img
+                  src="./images/box2.jpg"
+                  alt="Адаптивная вёрстка для Вашего проекта."
+                  width="370"
+                />
+                <p class="what-we-do-item-text">Мобильные приложения</p>
+              </div>
             </li>
             <li class="what-we-do-list-item">
-              <img
-                src="./images/box3.jpg"
-                alt="Подбор оптимальных дизайнерских решений."
-                width="370"
-                height="294"
-              />
+              <div class="deco-wwdl-item">
+                <img
+                  src="./images/box3.jpg"
+                  alt="Подбор оптимальных дизайнерских решений."
+                  width="370"
+                />
+                <p class="what-we-do-item-text">Дизайнерские решения</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -434,6 +444,14 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal dark-bg">
+        <div>
+          <button class="btn-close" data-modal-close>x</button>
+        </div>
+      </div>
+    </div>
+    <script src="./js/script.js"></script>
   </body>
 </html>
 

@@ -442,17 +442,54 @@
             </li>
           </ul>
         </div>
+        <form class="zero">
+          <label class="subscribe-label" for="subscribe-mail"
+            >Подпишитесь на рассылку</label
+          >
+          <div class="flexbox">
+            <input
+              class="subscribe-input"
+              type="email"
+              name="email"
+              id="subscribe-mail"
+              placeholder="E-mail"
+            />
+            <button class="subscribe-button" type="submit">Подписаться</button>
+          </div>
+        </form>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <div>
-          <button class="btn-close" data-modal-close>
-            <svg class="close-icon">
-              <use href="./images/sprite.svg#close"></use>
-            </svg>
-          </button>
-        </div>
+        <button class="btn-close" data-modal-close>
+          <svg class="close-icon">
+            <use href="./images/sprite.svg#close"></use>
+          </svg>
+        </button>
+        <form class="flexbox form-modal">
+          <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+          <label class="" for="user-name">Имя</label>
+          <input class="" type="text" name="name" id="user-name" />
+          <label class="" for="user-tel">Телефон</label>
+          <input class="" type="tel" name="telephone" id="user-tel" />
+          <label class="" for="user-email">Почта</label>
+          <input class="" type="email" name="email" id="user-email" />
+          <span class="coment">Комментарий</span>
+          <textarea
+            name="usercoments"
+            id=""
+            cols="30"
+            rows="10"
+            class="textarea"
+            placeholder="Введите текст"
+          ></textarea>
+          <input type="checkbox" name="" id="agreement" />
+          <label for="agreement"
+            >Соглашаюсь с рассылкой и принимаю
+            <a href="#">Условия договора</a></label
+          >
+          <button class="subscribe-button" type="submit">Подписаться</button>
+        </form>
       </div>
     </div>
     <script src="./js/script.js"></script>

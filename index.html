@@ -490,7 +490,7 @@
               name="telephone"
               id="user-tel"
             />
-            <svg class="person-black">
+            <svg class="phone-black">
               <use href="./images/sprite.svg#phone-black"></use>
             </svg>
           </div>
@@ -502,7 +502,7 @@
               name="email"
               id="user-email"
             />
-            <svg class="person-black">
+            <svg class="email-black">
               <use href="./images/sprite.svg#email-black"></use>
             </svg>
           </div>
@@ -516,16 +516,17 @@
           ></textarea>
 
           <div class="checkbox-conteiner">
-            <label class="agreement-item">
-              <input
-                class="visually-hidden checkbox-input"
-                type="checkbox"
-                name="agreement-accept"
-              />
-              Соглашаюсь с рассылкой и принимаю
-              <a class="agreement-link" href="#">Условия договора</a>
-              <span class="custom-checkbox"></span>
-            </label>
+            <input
+              class="visually-hidden checkbox-input"
+              type="checkbox"
+              name="agreement-accept"
+              id="agreement-accept"
+            />
+            <label class="agreement-item" for="agreement-accept"
+              >Соглашаюсь с рассылкой и принимаю</label
+            >
+            <a class="agreement-link" href="#">Условия договора</a>
+            <!-- <span class="custom-checkbox"></span> -->
           </div>
           <button class="send-button" type="submit">Отправить</button>
         </form>

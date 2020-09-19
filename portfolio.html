@@ -364,20 +364,16 @@
           </ul>
         </div>
         <form class="zero">
-          <label class="subscribe-label" for="subscribe-mail"
-            >Подпишитесь на рассылку</label
-          >
-          <div class="flexbox">
-            <input
-              class="subscribe-input"
-              type="email"
-              name="email"
-              id="subscribe-mail"
-              placeholder="E-mail"
-            />
-            <button class="subscribe-button" type="submit">Подписаться</button>
+          <label class="subscribe-label" for="subscribe-mail">Подпишитесь на рассылку</label>
+          <div class="subscribe-box">
+            <input class="subscribe-input" type="email" name="email" id="subscribe-mail" placeholder="E-mail" />
+            <button class="subscribe-button" type="submit">
+              Подписаться
+              <svg class="icon-send">
+                <use href="./images/sprite.svg#icon-send"></use>
+              </svg>
+            </button>
           </div>
-        </form>
       </div>
     </footer>
   </body>

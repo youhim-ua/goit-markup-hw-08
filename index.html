@@ -446,7 +446,7 @@
           <label class="subscribe-label" for="subscribe-mail"
             >Подпишитесь на рассылку</label
           >
-          <div class="flexbox">
+          <div class="subscribe-box">
             <input
               class="subscribe-input"
               type="email"
@@ -454,7 +454,12 @@
               id="subscribe-mail"
               placeholder="E-mail"
             />
-            <button class="subscribe-button" type="submit">Подписаться</button>
+            <button class="subscribe-button" type="submit">
+              Подписаться
+              <svg class="icon-send">
+                <use href="./images/sprite.svg#icon-send"></use>
+              </svg>
+            </button>
           </div>
         </form>
       </div>
@@ -467,28 +472,62 @@
           </svg>
         </button>
         <form class="flexbox form-modal">
-          <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
-          <label class="" for="user-name">Имя</label>
-          <input class="" type="text" name="name" id="user-name" />
-          <label class="" for="user-tel">Телефон</label>
-          <input class="" type="tel" name="telephone" id="user-tel" />
-          <label class="" for="user-email">Почта</label>
-          <input class="" type="email" name="email" id="user-email" />
-          <span class="coment">Комментарий</span>
+          <p class="modal-title zero">
+            Оставьте свои данные, мы вам перезвоним
+          </p>
+          <label class="form-item" for="user-name">Имя</label>
+          <div class="user-box">
+            <input class="modal-input" type="text" name="name" id="user-name" />
+            <svg class="person-black">
+              <use href="./images/sprite.svg#person-black"></use>
+            </svg>
+          </div>
+          <label class="form-item" for="user-tel">Телефон</label>
+          <div class="user-box">
+            <input
+              class="modal-input"
+              type="tel"
+              name="telephone"
+              id="user-tel"
+            />
+            <svg class="person-black">
+              <use href="./images/sprite.svg#phone-black"></use>
+            </svg>
+          </div>
+          <label class="form-item" for="user-email">Почта</label>
+          <div class="user-box">
+            <input
+              class="modal-input"
+              type="email"
+              name="email"
+              id="user-email"
+            />
+            <svg class="person-black">
+              <use href="./images/sprite.svg#email-black"></use>
+            </svg>
+          </div>
+          <label class="form-item" for="coment">Комментарий</label>
           <textarea
             name="usercoments"
-            id=""
-            cols="30"
+            id="coment"
             rows="10"
             class="textarea"
             placeholder="Введите текст"
           ></textarea>
-          <input type="checkbox" name="" id="agreement" />
-          <label for="agreement"
-            >Соглашаюсь с рассылкой и принимаю
-            <a href="#">Условия договора</a></label
-          >
-          <button class="subscribe-button" type="submit">Подписаться</button>
+
+          <div class="checkbox-conteiner">
+            <label class="agreement-item">
+              <input
+                class="visually-hidden checkbox-input"
+                type="checkbox"
+                name="agreement-accept"
+              />
+              Соглашаюсь с рассылкой и принимаю
+              <a class="agreement-link" href="#">Условия договора</a>
+              <span class="custom-checkbox"></span>
+            </label>
+          </div>
+          <button class="send-button" type="submit">Отправить</button>
         </form>
       </div>
     </div>

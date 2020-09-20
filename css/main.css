@@ -822,7 +822,7 @@ body {
 }
 
 .subscribe-label {
-  display: block;
+  display: inline-block;
   margin-bottom: 20px;
   font-style: normal;
   font-weight: bold;
@@ -838,6 +838,7 @@ body {
   width: 358px;
   height: 50px;
   padding: 15px 16px;
+  color: var(--back-color-and-hero);
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   background-color: transparent;

@@ -1,0 +1,34 @@
+.what-we-do {
+  padding-bottom: 94px;
+
+  &__title {
+    @extend %style-team-and-what-we-do;
+    margin-bottom: 50px;
+  }
+
+  &__list-item {
+    flex-basis: calc((100% - 3 * 30px) / 3);
+    line-height: 0;
+  }
+
+  &__list-text {
+    position: absolute;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    background: rgba(47, 48, 58, 0.8);
+
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $back-color-and-hero;
+  }
+}

@@ -8,45 +8,41 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
     />
-    <link rel="stylesheet" href="./css/normalize.css" />
-    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./sass/utils/normalize.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
 
   <body>
     <header class="header">
       <div class="container flexbox">
-        <nav class="navigation">
+        <nav class="nav">
           <a class="logo-link" href="./"
             ><span class="logo-link__text">Web</span
             ><span class="logo-link__text logo-link__text--black"
               >Studio</span
             ></a
           >
-          <ul class="nav-list list">
-            <li class="nav-list__item">
-              <a class="nav-list__links nav-list__links--hf" href="./"
-                >Студия</a
-              >
+          <ul class="nav__list list">
+            <li class="nav__item">
+              <a class="nav__links nav__links--hf" href="./">Студия</a>
             </li>
-            <li class="nav-list__item">
+            <li class="nav__item">
               <a
-                class="nav-list__links nav-list__links--hf nav-list__links--activ"
+                class="nav__links nav__links--hf nav__links--activ"
                 href="./portfolio.html"
                 >Портфолио</a
               >
             </li>
-            <li class="nav-list__item">
-              <a class="nav-list__links nav-list__links--hf" href="#"
-                >Контакты</a
-              >
+            <li class="nav__item">
+              <a class="nav__links nav__links--hf" href="#">Контакты</a>
             </li>
           </ul>
         </nav>
 
-        <ul class="nav-list list">
-          <li class="nav-list__item">
+        <ul class="nav__list list">
+          <li class="nav__item">
             <a
-              class="nav-list__contacts-links nav-list__contacts-links--flex"
+              class="nav__contacts-links nav__contacts-links--flex"
               href="mailto:info@devstudio.com"
             >
               <svg class="envelop-icon" width="16" height="12">
@@ -55,9 +51,9 @@
               <span>info@devstudio.com</span>
             </a>
           </li>
-          <li class="nav-list__item phone-icon">
+          <li class="nav__item phone-icon">
             <a
-              class="nav-list__contacts-links nav-list__contacts-links--flex"
+              class="nav__contacts-links nav__contacts-links--flex"
               href="tel:+380961111111"
             >
               <svg class="smartphone-icon" width="10" height="16">
@@ -327,13 +323,11 @@
           <address class="address flexbox">
             <span class="location zero">г. Киев, пр-т Леси Украинки, 26</span>
             <a
-              class="nav-list__contacts-links footer-links"
+              class="nav__contacts-links footer-links"
               href="mailto:info@devstudio.com"
               >info@devstudio.com</a
             >
-            <a
-              class="nav-list__contacts-links footer-links"
-              href="tel:+380961111111"
+            <a class="nav__contacts-links footer-links" href="tel:+380961111111"
               >+38 096 111 11 11</a
             >
           </address>

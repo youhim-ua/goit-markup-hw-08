@@ -1,0 +1,48 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flexbox {
+  display: flex;
+}
+
+.baseline {
+  align-items: baseline;
+}
+
+.zero {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.deco {
+  position: relative;
+  display: block;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  background-color: $back-color-and-hero;
+}
+
+.list,
+.masterpiacies__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}

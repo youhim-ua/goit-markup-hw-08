@@ -1,36 +1,36 @@
 .features {
   padding-top: 94px;
   padding-bottom: 94px;
+}
 
-  &__list-item::before {
-    display: block;
-    content: "";
-    background-size: 70px;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 120px;
-    background-color: $button-color;
-    border-radius: 4px;
-  }
+.features__list-item::before {
+  display: block;
+  content: "";
+  background-size: 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 120px;
+  background-color: $button-color;
+  border-radius: 4px;
+}
 
-  &__list-title {
-    padding-top: 30px;
-    margin-bottom: 10px;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: $title-text-color;
-  }
+.features__list-title {
+  padding-top: 30px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $title-text-color;
+}
 
-  &__list-text {
-    font-weight: 400;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    font-size: 14px;
-    color: $primary-text-color;
-  }
+.features__list-text {
+  font-weight: 400;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  font-size: 14px;
+  color: $primary-text-color;
 }
 
 .antena-icon::before {

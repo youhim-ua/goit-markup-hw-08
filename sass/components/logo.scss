@@ -1,0 +1,30 @@
+.logo-link {
+  display: inline-block;
+  margin-right: 93px;
+  text-decoration: none;
+}
+
+.logo-link__text {
+  font-family: Raleway, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: $hover-focus-color;
+  letter-spacing: 0.03em;
+}
+
+.logo-link__text--black {
+  color: $title-text-color;
+  white-space: normal;
+}
+
+.logo-link__text--white {
+  color: $back-color-and-hero;
+  white-space: normal;
+}
+
+.logo-link--down {
+  margin-bottom: 20px;
+  margin-right: 0;
+}

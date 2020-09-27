@@ -2,49 +2,49 @@
   display: flex;
   justify-content: start;
   margin-right: auto;
+}
 
-  &__list {
-    display: flex;
-    align-items: center;
-  }
+.nav__list {
+  display: flex;
+  align-items: center;
+}
 
-  &__item {
-    display: flex;
-    position: relative;
-    align-items: center;
-  }
+.nav__item {
+  display: flex;
+  position: relative;
+  align-items: center;
 
-  &__item:not(:last-child) {
+  &:not(:last-child) {
     margin-right: 50px;
   }
+}
 
-  &__links {
-    @extend %style-nav;
-    color: $title-text-color;
-  }
+.nav__links {
+  @extend %style-nav;
+  color: $title-text-color;
+}
 
-  &__links--activ::after {
-    content: "";
-    position: absolute;
-    bottom: -26.5px;
-    display: block;
-    width: 100%;
-    height: 4px;
-    background: $hover-focus-color;
-    border-radius: 2px;
-  }
+.nav__links--activ::after {
+  content: "";
+  position: absolute;
+  bottom: -26.5px;
+  display: block;
+  width: 100%;
+  height: 4px;
+  background: $hover-focus-color;
+  border-radius: 2px;
+}
 
-  &__links--hf:hover,
-  &__links--hf:focus {
-    color: $hover-focus-color;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
+.nav__links--hf:hover,
+.nav__links--hf:focus {
+  color: $hover-focus-color;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
-  &__contacts-links:hover .envelop-icon,
-  &__contacts-links:focus .envelop-icon,
-  &__contacts-links:hover .smartphone-icon,
-  &__contacts-links:focus .smartphone-icon {
-    fill: $hover-focus-color;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
+.nav__contacts-links:hover .envelop-icon,
+.nav__contacts-links:focus .envelop-icon,
+.nav__contacts-links:hover .smartphone-icon,
+.nav__contacts-links:focus .smartphone-icon {
+  fill: $hover-focus-color;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }

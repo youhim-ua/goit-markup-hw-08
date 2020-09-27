@@ -1,0 +1,12 @@
+.masterpiacies {
+  padding: 94px 0;
+
+  &__list {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 8px;
+  }
+}

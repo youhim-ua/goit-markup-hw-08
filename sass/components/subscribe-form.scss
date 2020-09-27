@@ -1,0 +1,31 @@
+.subscribe__label {
+  display: inline-block;
+  margin-bottom: 20px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $back-color-and-hero;
+}
+
+.subscribe__input {
+  display: block;
+  width: 358px;
+  height: 50px;
+  padding: 15px 16px;
+  color: $back-color-and-hero;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: transparent;
+
+  &::placeholder {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+  }
+}

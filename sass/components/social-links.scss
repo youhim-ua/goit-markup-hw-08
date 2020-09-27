@@ -3,10 +3,10 @@
   justify-content: center;
   margin-top: 16px;
   padding: 0;
+}
 
-  &__item:not(:last-child) {
-    margin-right: 10px;
-  }
+.social-links-list__item:not(:last-child) {
+  margin-right: 10px;
 }
 
 .social-links-list__link {

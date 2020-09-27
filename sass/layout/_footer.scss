@@ -2,20 +2,20 @@
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: $background-hero-color;
+}
 
-  &-location {
-    flex-direction: column;
-    align-items: flex-start;
-    margin-right: 93px;
-  }
+.footer-location {
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: 93px;
 
-  &-location:first-child {
+  &:first-child {
     margin-right: 70px;
   }
+}
 
-  &-links:not(:last-child) {
-    margin-bottom: 9px;
-  }
+.footer-links:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 .address {

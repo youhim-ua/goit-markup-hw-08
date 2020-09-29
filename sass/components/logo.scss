@@ -5,13 +5,13 @@
 }
 
 .logo-link__text {
-  font-family: $font-raleway, sans-serif;
+  font-family: $font-raleway;
   font-style: normal;
-  font-weight: 700;
+  font-weight: $font-weight-primery;
   font-size: 26px;
   line-height: 1.19;
   color: $hover-focus-color;
-  letter-spacing: 0.03em;
+  letter-spacing: $letter-spacing-primery;
 }
 
 .logo-link__text--black {

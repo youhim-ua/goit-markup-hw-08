@@ -1,8 +1,6 @@
-@import "./utils/normalize";
+@import "./base/normalize";
 @import "./utils/variables";
-@import "./utils/visuallyhiden";
 @import "./base/common";
-@import "./base/lists-style";
 @import "./layout/header";
 @import "./components/logo";
 @import "./layout/navigation";
@@ -10,7 +8,7 @@
 @import "./components/contacts-icons";
 @import "./layout/hero";
 @import "./layout/features";
-@import "./base/placeholders";
+@import "./utils/placeholders";
 @import "./layout/what-we-do";
 @import "./layout/team";
 @import "./components/social-links";

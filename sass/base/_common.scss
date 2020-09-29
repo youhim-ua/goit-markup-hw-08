@@ -1,3 +1,14 @@
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -36,7 +47,7 @@ html {
 }
 
 body {
-  font-family: $font-roboto, sans-serif;
+  font-family: $font-roboto;
   background-color: $back-color-and-hero;
 }
 
@@ -45,4 +56,22 @@ body {
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+
+.features__list,
+.what-we-do__list,
+.team__list,
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.features__list-item,
+.team__list-item {
+  flex-basis: calc((100% - 3 * 30px) / 4);
+}
+
+.features__list-item:not(:last-child),
+.what-we-do__list-item:not(:last-child),
+.team__list-item:not(:last-child) {
+  margin-right: 30px;
 }

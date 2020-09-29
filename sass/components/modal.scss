@@ -70,11 +70,11 @@
 .modal__title {
   margin-bottom: 12px;
   font-style: normal;
-  font-weight: bold;
+  font-weight: $font-weight-primery;
   font-size: 20px;
   line-height: 1.15;
   text-align: center;
-  letter-spacing: 0.03em;
+  letter-spacing: $letter-spacing-primery;
   color: $title-text-color;
 }
 .modal__input,
@@ -145,9 +145,9 @@
 .form__item {
   margin-bottom: 4px;
   font-style: normal;
-  font-weight: normal;
+  font-weight: $font-weight-secondary;
   font-size: 12px;
-  line-height: 1.16;
+  line-height: $line-height-primery;
   letter-spacing: 0.01em;
   color: $primary-text-color;
 }
@@ -160,12 +160,12 @@
 }
 
 .checkbox__agreement-item {
-  margin-left: 36px;
+  margin-left: $font-size-primery;
   font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
+  font-weight: $font-weight-secondary;
+  font-size: $font-size-secondary;
   line-height: 1.71;
-  letter-spacing: 0.03em;
+  letter-spacing: $letter-spacing-primery;
 
   &:after {
     content: "";
@@ -192,9 +192,9 @@
 .checkbox__agreement-link {
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
+  font-size: $font-size-secondary;
   line-height: 1.71;
-  letter-spacing: 0.03em;
+  letter-spacing: $letter-spacing-primery;
   color: $hover-focus-color;
   text-decoration: none;
   border-bottom: 0.8px solid currentColor;

@@ -11,10 +11,10 @@
 }
 
 %style-team-and-what-we-do {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+  font-weight: $font-weight-primery;
+  font-size: $font-size-primery;
+  line-height: $line-height-primery;
   text-align: center;
-  letter-spacing: 0.03em;
+  letter-spacing: $letter-spacing-primery;
   color: $title-text-color;
 }

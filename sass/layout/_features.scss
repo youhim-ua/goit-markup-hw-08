@@ -17,19 +17,19 @@
 .features__list-title {
   padding-top: 30px;
   margin-bottom: 10px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
+  font-weight: $font-weight-primery;
+  font-size: $font-size-secondary;
+  line-height: $line-height-secondary;
+  letter-spacing: $letter-spacing-primery;
   text-transform: uppercase;
   color: $title-text-color;
 }
 
 .features__list-text {
-  font-weight: 400;
+  font-weight: $font-weight-secondary;
   line-height: 1.71;
-  letter-spacing: 0.03em;
-  font-size: 14px;
+  letter-spacing: $letter-spacing-primery;
+  font-size: $font-size-secondary;
   color: $primary-text-color;
 }
 

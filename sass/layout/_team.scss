@@ -45,12 +45,14 @@
 }
 
 @include for-size(tablet) {
+  .team__text-box {
+    padding: 30px 0;
+  }
+}
+
+@include for-size(desktop) {
   .team {
     padding-bottom: 94px;
     padding-top: 94px;
-  }
-
-  .team__text-box {
-    padding: 30px 0;
   }
 }

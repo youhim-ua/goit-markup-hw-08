@@ -17,7 +17,7 @@ html {
 *::after,
 *::before {
   box-sizing: inherit;
-  outline: 1px solid tomato;
+  // outline: 1px solid tomato;
 }
 
 img {
@@ -153,9 +153,10 @@ body {
     flex-wrap: wrap;
   }
 
-  // .features__list {
-  //   margin: -15px;
-  // }
+  .features__list,
+  .team__list {
+    margin: -15px;
+  }
 }
 
 // @include for-size(desktop) {
@@ -171,40 +172,47 @@ body {
 .features__list-item,
 .team__list-item {
   display: block;
+  margin-bottom: 30px;
+}
+
+.features__list-item:last-child,
+.what-we-do__list-item:last-child,
+.team__list-item:last-child {
+  margin-bottom: 0;
 }
 
 @include for-size(tablet) {
   .features__list-item,
   .team__list-item {
-    flex-basis: calc((100% - 30px) / 2);
+    margin: 15px;
+    flex-basis: calc(50% - 30px);
+  }
+
+  .features__list-item:last-child,
+  .team__list-item:last-child {
+    margin-bottom: 15px;
   }
 }
 
 @include for-size(desktop) {
   .features__list-item,
   .team__list-item {
-    flex-basis: calc((100% - 3 * 30px) / 4);
+    flex-basis: calc(25% - 30px);
   }
 }
 
-.features__list-item:not(:last-child),
-.what-we-do__list-item:not(:last-child),
-.team__list-item:not(:last-child) {
-  margin-bottom: 30px;
-}
-
 // @include for-size(tablet) {
-//   .features__list-item:not(:last-child),
-//   .what-we-do__list-item:not(:last-child),
-//   .team__list-item:not(:last-child) {
+//   // .features__list-item:not(:last-child),
+//   // .what-we-do__list-item:not(:last-child),
+//   // .team__list-item:not(:last-child) {
 //     margin-right: 30px;
 //   }
 // }
 
 @include for-size(desktop) {
-  .features__list-item:not(:last-child),
-  .what-we-do__list-item:not(:last-child),
-  .team__list-item:not(:last-child) {
+  // .features__list-item:not(:last-child),
+  // .team__list-item:not(:last-child),
+  .what-we-do__list-item:not(:last-child) {
     margin-right: 30px;
     margin-bottom: 0;
   }

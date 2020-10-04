@@ -18,7 +18,7 @@
 
 @include for-size(tablet) {
   .masterpiacies {
-    padding: 94px 0;
+    padding: 60px 0;
 
     &__list {
       display: flex;
@@ -28,5 +28,11 @@
     &__item {
       margin: 0 8px 0 0;
     }
+  }
+}
+
+@include for-size(desktop) {
+  .masterpiacies {
+    padding: 94px 0;
   }
 }

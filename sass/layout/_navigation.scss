@@ -130,7 +130,7 @@
   }
 }
 
-@include for-size(tablet) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .menu-button {
     display: none;
   }
@@ -202,6 +202,7 @@
   .contact-list {
     margin-left: 84px;
   }
+
   .contact-item:not(:last-child) {
     margin-bottom: 10px;
   }
@@ -225,7 +226,6 @@
   .nav__list {
     display: flex;
     align-items: center;
-    margin-left: 88px;
   }
 
   .nav__item {
@@ -277,6 +277,17 @@
   }
 
   .contact-list {
-    margin-left: 84px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 305px;
+  }
+
+  .contact-item {
+    margin-bottom: 0;
+  }
+
+  .contact-item:not(:last-child) {
+    margin-right: 30px;
   }
 }

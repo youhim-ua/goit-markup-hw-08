@@ -45,6 +45,10 @@
 }
 
 @include for-size(desktop) {
+  .logo-wrapper {
+    display: block;
+  }
+
   .logo-link {
     display: inline-block;
     margin-right: 93px;

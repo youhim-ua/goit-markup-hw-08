@@ -32,7 +32,7 @@
   }
 }
 
-@include for-size(tablet) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .subscribe {
     display: flax;
     flex-direction: column;
@@ -48,14 +48,17 @@
 
 @include for-size(desktop) {
   .subscribe {
-    display: block;
+    display: inline-flex;
+    flex-direction: column;
   }
 
   .subscribe__label {
     display: inline-block;
+    text-align: start;
   }
 
   .subscribe__input {
     width: 358px;
+    margin-bottom: 0;
   }
 }

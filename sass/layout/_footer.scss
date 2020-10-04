@@ -62,7 +62,7 @@
   fill: $back-color-and-hero;
 }
 
-@include for-size(tablet) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .wrapper {
     display: flex;
     justify-content: space-around;
@@ -113,6 +113,11 @@
 }
 
 @include for-size(desktop) {
+  .wrapper {
+    display: inline-flex;
+    justify-content: start;
+  }
+
   .footer-location {
     flex-direction: column;
     align-items: flex-start;

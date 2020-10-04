@@ -1,6 +1,6 @@
 .features {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .features__list-item::before {
@@ -17,6 +17,7 @@
 .features__list-title {
   padding-top: 30px;
   margin-bottom: 10px;
+  text-align: center;
   font-weight: $font-weight-primery;
   font-size: $font-size-secondary;
   line-height: $line-height-secondary;
@@ -47,4 +48,15 @@
 
 .astronaut-icon::before {
   background-image: url(../images/astronaut.svg);
+}
+
+@include for-size(tablet) {
+  .features {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .features__list-title {
+    text-align: start;
+  }
 }

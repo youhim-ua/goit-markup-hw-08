@@ -1,5 +1,22 @@
 .header {
-  padding-top: 24px;
-  padding-bottom: 25px;
+  position: relative;
+  padding-top: 16px;
+  padding-bottom: 16px;
   border-bottom: 1px solid #ececec;
+}
+
+@include for-size(tablet) {
+  .header {
+    padding-top: 21px;
+    padding-bottom: 21px;
+    border-bottom: 1px solid #ececec;
+  }
+}
+
+@include for-size(desktop) {
+  .header {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #ececec;
+  }
 }

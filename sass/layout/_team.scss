@@ -1,12 +1,17 @@
 .team {
-  padding-bottom: 94px;
-  padding-top: 94px;
+  padding-bottom: 60px;
+  padding-top: 60px;
   background-color: $button-color;
 }
 
 .team__title {
-  @extend %style-team-and-what-we-do;
   margin-bottom: 50px;
+  font-weight: $font-weight-primery;
+  font-size: $font-size-primery;
+  line-height: $line-height-primery;
+  text-align: center;
+  letter-spacing: $letter-spacing-primery;
+  color: $title-text-color;
 }
 
 .team__list-item {
@@ -36,5 +41,16 @@
 }
 
 .team__text-box {
-  padding: 30px 0;
+  padding: 30px 0 24px;
+}
+
+@include for-size(tablet) {
+  .team {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
+
+  .team__text-box {
+    padding: 30px 0;
+  }
 }

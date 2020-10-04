@@ -1,6 +1,11 @@
+.logo-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
 .logo-link {
-  display: inline-block;
-  margin-right: 93px;
+  display: block;
   text-decoration: none;
 }
 
@@ -8,8 +13,8 @@
   font-family: $font-raleway;
   font-style: normal;
   font-weight: $font-weight-primery;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.16;
   color: $hover-focus-color;
   letter-spacing: $letter-spacing-primery;
 }
@@ -25,6 +30,33 @@
 }
 
 .logo-link--down {
-  margin-bottom: 20px;
-  margin-right: 0;
+  display: block;
+  justify-content: center;
+}
+
+@include for-size(tablet) {
+  .logo-link {
+    display: block;
+  }
+
+  .logo-link--down {
+    display: block;
+  }
+}
+
+@include for-size(desktop) {
+  .logo-link {
+    display: inline-block;
+    margin-right: 93px;
+  }
+
+  .logo-link__text {
+    font-size: 26px;
+    line-height: 1.19;
+  }
+
+  .logo-link--down {
+    display: block;
+    margin-bottom: 20px;
+  }
 }

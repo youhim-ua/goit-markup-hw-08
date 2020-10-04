@@ -17,22 +17,101 @@ html {
 *::after,
 *::before {
   box-sizing: inherit;
+  outline: 1px solid tomato;
 }
 
-.container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.relative {
+  position: relative;
+}
+
+// .container {
+//   width: 480px;
+//   padding-left: 15px;
+//   padding-right: 15px;
+//   margin-left: auto;
+//   margin-right: auto;
+// }
+
+@include for-size(mobile-only) {
+  .container {
+    width: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@include for-size(mobile) {
+  .container {
+    width: 480px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@include for-size(tablet) {
+  .container {
+    width: 768px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@include for-size(desktop) {
+  .container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .flexbox {
-  display: flex;
+  display: block;
 }
 
-.baseline {
-  align-items: baseline;
+@include for-size(tablet) {
+  .flexbox {
+    display: flex;
+  }
+}
+
+@include for-size(desktop) {
+  .flexbox {
+    display: flex;
+  }
+}
+
+.align-items {
+  align-items: center;
+}
+
+// .baseline {
+//   align-items: baseline;
+// }
+
+@include for-size(tablet) {
+  .baseline {
+    align-items: baseline;
+  }
+}
+
+@include for-size(desktop) {
+  .baseline {
+    align-items: baseline;
+  }
 }
 
 .zero {
@@ -62,16 +141,71 @@ body {
 .what-we-do__list,
 .team__list,
 .project-list {
-  display: flex;
-  flex-wrap: wrap;
+  display: block;
 }
+
+@include for-size(tablet) {
+  .features__list,
+  .what-we-do__list,
+  .team__list,
+  .project-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  // .features__list {
+  //   margin: -15px;
+  // }
+}
+
+// @include for-size(desktop) {
+//   .features__list,
+//   .what-we-do__list,
+//   .team__list,
+//   .project-list {
+//     display: flex;
+//     flex-wrap: wrap;
+//   }
+// }
+
 .features__list-item,
 .team__list-item {
-  flex-basis: calc((100% - 3 * 30px) / 4);
+  display: block;
+}
+
+@include for-size(tablet) {
+  .features__list-item,
+  .team__list-item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+
+@include for-size(desktop) {
+  .features__list-item,
+  .team__list-item {
+    flex-basis: calc((100% - 3 * 30px) / 4);
+  }
 }
 
 .features__list-item:not(:last-child),
 .what-we-do__list-item:not(:last-child),
 .team__list-item:not(:last-child) {
-  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+// @include for-size(tablet) {
+//   .features__list-item:not(:last-child),
+//   .what-we-do__list-item:not(:last-child),
+//   .team__list-item:not(:last-child) {
+//     margin-right: 30px;
+//   }
+// }
+
+@include for-size(desktop) {
+  .features__list-item:not(:last-child),
+  .what-we-do__list-item:not(:last-child),
+  .team__list-item:not(:last-child) {
+    margin-right: 30px;
+    margin-bottom: 0;
+  }
 }

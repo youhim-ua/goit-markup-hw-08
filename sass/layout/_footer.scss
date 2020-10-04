@@ -5,13 +5,17 @@
 }
 
 .footer-location {
-  flex-direction: column;
-  align-items: flex-start;
-  margin-right: 93px;
+  margin: 0;
+}
 
-  &:first-child {
-    margin-right: 70px;
-  }
+.footer-links {
+  display: block;
+  text-align: center;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 
 .footer-links:not(:last-child) {
@@ -19,33 +23,35 @@
 }
 
 .address {
-  align-items: flex-start;
-  flex-direction: column;
+  margin-bottom: 60px;
 }
 
 .location {
   margin-top: 0;
-  margin-bottom: 9px;
+  margin-bottom: 8px;
   font-style: normal;
   font-weight: $font-weight-secondary;
   font-size: $font-size-secondary;
   line-height: 1.7;
   letter-spacing: $letter-spacing-primery;
+  text-align: center;
   color: $back-color-and-hero;
 }
 .add-to-us {
-  margin-bottom: 0;
+  display: block;
+  margin: 0 0 20px;
   font-style: normal;
   font-weight: bold;
   font-size: $font-size-secondary;
   line-height: $line-height-secondary;
   letter-spacing: $letter-spacing-primery;
   text-transform: uppercase;
+  text-align: center;
   color: $back-color-and-hero;
 }
 
 .sll-footer {
-  margin: 20px 0 0 0;
+  margin: 0 0 60px;
 }
 
 .social-links-list__link--color {
@@ -54,4 +60,98 @@
 
 .social-icon-footer {
   fill: $back-color-and-hero;
+}
+
+@include for-size(tablet) {
+  .wrapper {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 60px;
+  }
+
+  .footer-location {
+    flex-direction: column;
+    align-items: center;
+    // margin-right: 93px;
+
+    // &:first-child {
+    //   margin-right: 70px;
+    // }
+  }
+
+  .footer-links {
+    display: block;
+    text-align: center;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
+
+  .footer-links:not(:last-child) {
+    margin-bottom: 9px;
+  }
+
+  .address {
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .location {
+    margin-bottom: 9px;
+  }
+
+  .add-to-us {
+    margin-bottom: 0;
+  }
+
+  .sll-footer {
+    margin: 20px 0 0 0;
+  }
+}
+
+@include for-size(desktop) {
+  .footer-location {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 93px;
+
+    &:first-child {
+      margin-right: 70px;
+    }
+  }
+
+  .footer-links {
+    display: block;
+    text-align: center;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
+
+  .footer-links:not(:last-child) {
+    margin-bottom: 9px;
+  }
+
+  .address {
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .location {
+    margin-bottom: 9px;
+  }
+
+  .add-to-us {
+    margin-bottom: 0;
+  }
+
+  .sll-footer {
+    margin: 20px 0 0 0;
+  }
 }

@@ -72,21 +72,6 @@
   .footer-location {
     flex-direction: column;
     align-items: center;
-    // margin-right: 93px;
-
-    // &:first-child {
-    //   margin-right: 70px;
-    // }
-  }
-
-  .footer-links {
-    display: block;
-    text-align: center;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 1.71;
-    text-align: center;
-    letter-spacing: 0.03em;
   }
 
   .footer-links:not(:last-child) {
@@ -128,16 +113,6 @@
     }
   }
 
-  .footer-links {
-    display: block;
-    text-align: center;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 1.71;
-    text-align: center;
-    letter-spacing: 0.03em;
-  }
-
   .footer-links:not(:last-child) {
     margin-bottom: 9px;
   }
@@ -146,17 +121,5 @@
     align-items: flex-start;
     flex-direction: column;
     margin: 0;
-  }
-
-  .location {
-    margin-bottom: 9px;
-  }
-
-  .add-to-us {
-    margin-bottom: 0;
-  }
-
-  .sll-footer {
-    margin: 20px 0 0 0;
   }
 }

@@ -4,6 +4,13 @@
   background-color: $button-color;
 }
 
+@include for-size(desktop) {
+  .team {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
+}
+
 .team__title {
   margin-bottom: 50px;
   font-weight: $font-weight-primery;
@@ -53,12 +60,5 @@
 @include for-size(tablet) {
   .team__text-box {
     padding: 30px 0;
-  }
-}
-
-@include for-size(desktop) {
-  .team {
-    padding-bottom: 94px;
-    padding-top: 94px;
   }
 }

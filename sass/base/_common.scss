@@ -17,7 +17,6 @@ html {
 *::after,
 *::before {
   box-sizing: inherit;
-  outline: 1px solid tomato;
 }
 
 img {
@@ -30,21 +29,11 @@ img {
   position: relative;
 }
 
-// .container {
-//   width: 480px;
-//   padding-left: 15px;
-//   padding-right: 15px;
-//   margin-left: auto;
-//   margin-right: auto;
-// }
-
 @include for-size(mobile-only) {
   .container {
     width: auto;
     padding-left: 15px;
     padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 
@@ -61,20 +50,12 @@ img {
 @include for-size(tablet) {
   .container {
     width: 768px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 
 @include for-size(desktop) {
   .container {
     width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 
@@ -97,10 +78,6 @@ img {
 .align-items {
   align-items: center;
 }
-
-// .baseline {
-//   align-items: baseline;
-// }
 
 @include for-size(tablet) {
   .baseline {
@@ -159,16 +136,6 @@ body {
   }
 }
 
-// @include for-size(desktop) {
-//   .features__list,
-//   .what-we-do__list,
-//   .team__list,
-//   .project-list {
-//     display: flex;
-//     flex-wrap: wrap;
-//   }
-// }
-
 .features__list-item,
 .team__list-item {
   display: block;
@@ -201,19 +168,7 @@ body {
   }
 }
 
-// @include for-size(tablet) {
-//   // .features__list-item:not(:last-child),
-//   // .what-we-do__list-item:not(:last-child),
-//   // .team__list-item:not(:last-child) {
-//     margin-right: 30px;
-//   }
-// }
-
-@include for-size(desktop) {
-  // .features__list-item:not(:last-child),
-  // .team__list-item:not(:last-child),
-  .what-we-do__list-item:not(:last-child) {
-    margin-right: 30px;
-    margin-bottom: 0;
-  }
+.what-we-do__list-item:not(:last-child) {
+  margin-right: 30px;
+  margin-bottom: 0;
 }

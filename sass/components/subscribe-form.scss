@@ -52,8 +52,12 @@
     flex-direction: column;
   }
 
+  .subscribe-container {
+    display: inline-flex;
+  }
+
   .subscribe__label {
-    display: inline-block;
+    display: block;
     text-align: start;
   }
 

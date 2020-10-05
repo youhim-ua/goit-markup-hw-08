@@ -7,11 +7,17 @@
 .team__title {
   margin-bottom: 50px;
   font-weight: $font-weight-primery;
-  font-size: $font-size-primery;
+  font-size: 28px;
   line-height: $line-height-primery;
   text-align: center;
   letter-spacing: $letter-spacing-primery;
   color: $title-text-color;
+}
+
+@include for-size(desktop) {
+  .team__title {
+    font-size: $font-size-primery;
+  }
 }
 
 .team__list-item {

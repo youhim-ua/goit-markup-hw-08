@@ -888,7 +888,7 @@ body {
 
 .hero {
   background-color: #c4c4c4;
-  background: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-img.jpg);
+  background: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/480px-1x/hero-img.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -933,6 +933,43 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
+}
+
+@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .hero {
+    background: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/480px-2x/hero-img@2x.jpg);
+    background-size: cover;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero {
+    background: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/768px-1x/hero-img.jpg);
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/768px-2x/hero-img@2x.jpg);
+    background-size: cover;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero {
+    background: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/1200px-1x/hero-img.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/1200px-2x/hero-img@2x.jpg);
+    background-size: cover;
+    background-position: center;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -1432,6 +1469,7 @@ body {
 @media (min-width: 1200px) {
   .modal {
     width: 528px;
+    height: 581px;
   }
 }
 
@@ -1831,6 +1869,18 @@ body {
   background-color: rgba(33, 150, 243, 0.9);
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .project-list__overflow-text {
+    padding: 49px 24px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .project-list__overflow-text {
+    padding: 63px 24px;
+  }
+}
+
 .project-list__item {
   margin-bottom: 30px;
   background: #ffffff;
@@ -1885,12 +1935,6 @@ body {
 @media screen and (min-width: 768px) and (min-width: 768px) and (max-width: 1199px) {
   .project-list__item:nth-child(2n) {
     margin-right: 0;
-  }
-}
-
-@media (min-width: 768px) {
-  .project-list__overflow-text {
-    padding: 63px 24px;
   }
 }
 

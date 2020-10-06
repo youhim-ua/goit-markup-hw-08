@@ -51,6 +51,18 @@
   background-color: rgba(33, 150, 243, 0.9);
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .project-list__overflow-text {
+    padding: 49px 24px;
+  }
+}
+
+@include for-size(desktop) {
+  .project-list__overflow-text {
+    padding: 63px 24px;
+  }
+}
+
 .project-list__item {
   margin-bottom: 30px;
   background: $back-color-and-hero;
@@ -107,10 +119,6 @@
     .project-list__item:nth-child(2n) {
       margin-right: 0;
     }
-  }
-
-  .project-list__overflow-text {
-    padding: 63px 24px;
   }
 }
 

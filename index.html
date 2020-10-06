@@ -144,31 +144,79 @@
           <ul class="what-we-do__list list">
             <li class="what-we-do__list-item">
               <div class="deco">
-                <img
-                  src="./images/box1.jpg"
-                  alt="Моделирование сайтов с использование передовых методологий и техник."
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/webp-1200px-1x/box1.webp    1x,
+                      ./images/webp-1200px-2x/box1@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/1200px-1x/box1.jpg    1x,
+                      ./images/1200px-2x/box1@2x.jpg 2x
+                    "
+                    type="image/jpeg"
+                  />
+                  <img
+                    src="./images/1200px-1x/box1.jpg"
+                    alt="Моделирование сайтов с использование передовых методологий и техник."
+                    width="370"
+                  />
+                </picture>
                 <p class="what-we-do__list-text">Десктопные приложения</p>
               </div>
             </li>
             <li class="what-we-do__list-item">
               <div class="deco">
-                <img
-                  src="./images/box2.jpg"
-                  alt="Адаптивная вёрстка для Вашего проекта."
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/webp-1200px-1x/box2.webp    1x,
+                      ./images/webp-1200px-2x/box2@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/1200px-1x/box2.jpg    1x,
+                      ./images/1200px-2x/box2@2x.jpg 2x
+                    "
+                    type="image/jpeg"
+                  />
+                  <img
+                    src="./images/1200px-1x/box2.jpg"
+                    alt="Адаптивная вёрстка для Вашего проекта."
+                    width="370"
+                  />
+                </picture>
                 <p class="what-we-do__list-text">Мобильные приложения</p>
               </div>
             </li>
             <li class="what-we-do__list-item">
               <div class="deco">
-                <img
-                  src="./images/box3.jpg"
-                  alt="Подбор оптимальных дизайнерских решений."
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/webp-1200px-1x/box3.webp    1x,
+                      ./images/webp-1200px-2x/box3@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/1200px-1x/box3.jpg    1x,
+                      ./images/1200px-2x/box3@2x.jpg 2x
+                    "
+                    type="image/jpeg"
+                  />
+                  <img
+                    src="./images/1200px-1x/box3.jpg"
+                    alt="Подбор оптимальных дизайнерских решений."
+                    width="370"
+                  />
+                </picture>
                 <p class="what-we-do__list-text">Дизайнерские решения</p>
               </div>
             </li>
@@ -182,12 +230,61 @@
 
           <ul class="team__list list">
             <li class="team__list-item">
-              <img
-                src="./images/photo1.jpg"
-                alt="Игорь Демьяненко"
-                width="270"
-                height="260"
-              />
+              <picture class="project-list__img">
+                <source
+                  srcset="
+                    ./images/webp-1200px-1x/photo1.webp    1x,
+                    ./images/webp-1200px-2x/photo1@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/webp-768px-1x/photo1.webp    1x,
+                    ./images/webp-768px-2x/photo1@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/webp-480px-1x/photo1.webp    1x,
+                    ./images/webp-480px-2x/photo1@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/1200px-1x/photo1.jpg    1x,
+                    ./images/1200px-2x/photo1@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/768px-1x/photo1.jpg    1x,
+                    ./images/768px-2x/photo1@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/480px-1x/photo1.jpg    1x,
+                    ./images/480px-2x/photo1@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/jpeg"
+                />
+                <img
+                  src="./images/480px-1x/photo1.jpg"
+                  alt="Игорь Демьяненко"
+                  width="270"
+                />
+              </picture>
               <div class="team__text-box">
                 <h3 class="team__person zero">Игорь Демьяненко</h3>
                 <p class="team__person-position zero" lang="en">
@@ -235,12 +332,61 @@
             </li>
 
             <li class="team__list-item">
-              <img
-                src="./images/photo2.jpg"
-                alt="Адаптивная вёрстка для Вашего проекта."
-                width="270"
-                height="260"
-              />
+              <picture class="project-list__img">
+                <source
+                  srcset="
+                    ./images/webp-1200px-1x/photo2.webp    1x,
+                    ./images/webp-1200px-2x/photo2@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/webp-768px-1x/photo2.webp    1x,
+                    ./images/webp-768px-2x/photo2@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/webp-480px-1x/photo2.webp    1x,
+                    ./images/webp-480px-2x/photo2@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/1200px-1x/photo2.jpg    1x,
+                    ./images/1200px-2x/photo2@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/768px-1x/photo2.jpg    1x,
+                    ./images/768px-2x/photo2@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/480px-1x/photo2.jpg    1x,
+                    ./images/480px-2x/photo2@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/jpeg"
+                />
+                <img
+                  src="./images/480px-1x/photo2.jpg"
+                  alt="Ольга Репина"
+                  width="270"
+                />
+              </picture>
               <div class="team__text-box">
                 <h3 class="team__person zero">Ольга Репина</h3>
                 <p class="team__person-position zero" lang="en">
@@ -287,12 +433,61 @@
               </div>
             </li>
             <li class="team__list-item">
-              <img
-                src="./images/photo3.jpg"
-                alt="Подбор оптимальных дизайнерских решений."
-                width="270"
-                height="260"
-              />
+              <picture class="project-list__img">
+                <source
+                  srcset="
+                    ./images/webp-1200px-1x/photo3.webp    1x,
+                    ./images/webp-1200px-2x/photo3@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/webp-768px-1x/photo3.webp    1x,
+                    ./images/webp-768px-2x/photo3@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/webp-480px-1x/photo3.webp    1x,
+                    ./images/webp-480px-2x/photo3@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/1200px-1x/photo3.jpg    1x,
+                    ./images/1200px-2x/photo3@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/768px-1x/photo3.jpg    1x,
+                    ./images/768px-2x/photo3@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/480px-1x/photo3.jpg    1x,
+                    ./images/480px-2x/photo3@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/jpeg"
+                />
+                <img
+                  src="./images/480px-1x/photo3.jpg"
+                  alt="Николай Тарасов"
+                  width="270"
+                />
+              </picture>
               <div class="team__text-box">
                 <h3 class="team__person zero">Николай Тарасов</h3>
                 <p class="team__person-position zero" lang="en">Marketing</p>
@@ -337,12 +532,61 @@
               </div>
             </li>
             <li class="team__list-item">
-              <img
-                src="./images/photo4.jpg"
-                alt="Подбор оптимальных дизайнерских решений."
-                width="270"
-                height="260"
-              />
+              <picture class="project-list__img">
+                <source
+                  srcset="
+                    ./images/webp-1200px-1x/photo4.webp    1x,
+                    ./images/webp-1200px-2x/photo4@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/webp-768px-1x/photo4.webp    1x,
+                    ./images/webp-768px-2x/photo4@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/webp-480px-1x/photo4.webp    1x,
+                    ./images/webp-480px-2x/photo4@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/1200px-1x/photo4.jpg    1x,
+                    ./images/1200px-2x/photo4@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/768px-1x/photo4.jpg    1x,
+                    ./images/768px-2x/photo4@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/480px-1x/photo4.jpg    1x,
+                    ./images/480px-2x/photo4@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/jpeg"
+                />
+                <img
+                  src="./images/480px-1x/photo4.jpg"
+                  alt="Михаил Ермаков"
+                  width="270"
+                />
+              </picture>
               <div class="team__text-box">
                 <h3 class="team__person zero">Михаил Ермаков</h3>
                 <p class="team__person-position zero" lang="en">UI Designer</p>

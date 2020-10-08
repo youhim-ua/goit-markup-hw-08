@@ -5,6 +5,16 @@
   border-bottom: 1px solid #ececec;
 }
 
+@media screen and (max-width: 767px) {
+  .header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 200;
+    background-color: inherit;
+  }
+}
+
 @include for-size(tablet) {
   .header {
     padding-top: 21px;

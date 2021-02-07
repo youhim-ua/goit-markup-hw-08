@@ -1,20 +1,22 @@
 @media screen and (max-width: 767px) {
   .menu-container {
-    display: none;
-    position: fixed;
-    top: 60px;
+    position: absolute;
+    opacity: 0;
+    top: -453px;
     left: 0;
+    z-index: -1;
     width: 100%;
-    z-index: 50;
     height: 453px;
     padding: 60px 0;
     background-color: $back-color-and-hero;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
-      0px 1px 3px rgba(0, 0, 0, 0.16);
+    transition: all 800ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &.is-open {
-      display: block;
-      z-index: 100;
+      opacity: 1;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04),
+        0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+      transform: translateY(513px);
+      transition: all 800ms cubic-bezier(0.4, 0, 0.2, 1);
     }
   }
 
